@@ -12,5 +12,15 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         // $this->call(UsersTableSeeder::class);
+        factory(\almagest\Transport::class, 1)->create();
+        factory(\almagest\Payment_term::class, 1)->create();
+        factory(\almagest\Discount::class, 1)->create();
+        factory(\almagest\Bank_entity::class, 1)->create();
+        factory(\almagest\Delivery_term::class, 1)->create();
+        factory(\almagest\Company::class, 1)->create();
+        factory(\almagest\Role::class)->create(['rol' => 'administrador']);
+        factory(\almagest\Role::class,1)->create();
+        factory(\almagest\User::class)->create(['firstname' => 'Raul','secondname'=>'Reyes','email' => 'admin@admin.com','password' => Hash::make('12345678'),'actived' => '1','email_confirmed' => '1','type' => 'administrador']);
+        factory(\almagest\User::class)->create(['firstname' => 'Alberto','secondname'=>'Díaz','email' => 'alberto@alberto.com','password' => Hash::make('12345678'),'actived' => '1','email_confirmed' => '1']);
     }
 }

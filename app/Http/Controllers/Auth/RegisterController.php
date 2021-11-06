@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Http\Controllers\Auth;
+namespace almagest\Http\Controllers\Auth;
 
-use App\User;
-use App\Http\Controllers\Controller;
+use almagest\User;
+use almagest\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
@@ -59,14 +59,21 @@ class RegisterController extends Controller
      * Create a new user instance after a valid registration.
      *
      * @param  array  $data
-     * @return \App\User
+     * @return \almagest\User
      */
     protected function create(array $data)
     {
         return User::create([
-            'name' => $data['name'],
+            'firstname' => $data['name'],
+            'secondname' =>'',
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
+            'company_id'=>1,
+            'type'=>'admin',
+            'email_confirmed'=>0,
+            'actived'=>0,
+            'iscontact'=>0,
+            'deleted'=>0,
         ]);
     }
 }
