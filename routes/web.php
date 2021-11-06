@@ -19,11 +19,3 @@ Route::get('/home', 'UserController@index');
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/admin', 'UserController@index');
-
-//Route::get('/eliminar{id}', 'UserController@destroy');
-
-
-//Route::get('/admin', 'UserController@edit');
-/*Route::get('admin/{id}', function($id){
-	return "Eliminando el usuario $id de la aplicación";
-});*/
