@@ -19,3 +19,5 @@ Route::get('/home', 'UserController@index');
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/admin', 'UserController@index');
+
+Route::get('/register/verify/{code}', 'HomeController@verify');

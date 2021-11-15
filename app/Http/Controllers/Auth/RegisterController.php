@@ -7,6 +7,7 @@ use almagest\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
+use Illuminate\Support\Facades\Mail;
 
 class RegisterController extends Controller
 {
@@ -63,7 +64,8 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-        return User::create([
+        $data['code'] = str_random(25);
+        $user=User::create([
             'firstname' => $data['name'],
             'secondname' =>'',
             'email' => $data['email'],
@@ -74,6 +76,15 @@ class RegisterController extends Controller
             'actived'=>0,
             'iscontact'=>0,
             'deleted'=>0,
+            'code' => $data['code'],
         ]);
+
+        Mail::send('confirmation_code', $data, function($message) use ($data) {
+            $message->to($data['email'], $data['name'])->subject('Por favor confirma tu correo');
+        });
+        
+        return $user;
+
     }
+    
 }

@@ -20,10 +20,11 @@ class CreateUsersTable extends Migration
             $table->string('email')->unique();
             $table->string('password');
             $table->unsignedBigInteger('company_id');
-            $table->foreign('company_id')->references('id')->on('companies')->onUpdate("cascade");
+            $table->foreign('company_id')->references('id')->on('companies')->onUpdate("cascade")->default(1);
             $table->string('type')->nullable();
-            $table->tinyInteger('email_confirmed');
-            $table->tinyInteger('actived');
+            $table->string('code')->nullable(); // confirmation_code
+            $table->tinyInteger('email_confirmed')->default(0);
+            $table->tinyInteger('actived')->default(0);
             $table->tinyInteger('iscontact');
             $table->tinyInteger('deleted');
             $table->rememberToken();

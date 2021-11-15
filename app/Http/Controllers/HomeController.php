@@ -3,6 +3,7 @@
 namespace almagest\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Auth\Events\Registered;
 
 class HomeController extends Controller
 {
@@ -29,4 +30,29 @@ class HomeController extends Controller
     {
         return view('home');
     }
+    public function verify($code)
+    {
+        $user = User::where('code', $code)->first();
+    
+        if (! $user)
+            return redirect('/');
+    
+        $user->email_confirmed = '1';
+        $user->code = null;
+        $user->save();
+    
+        return redirect('/home');
+    }
+
+    public function register(Request $request)
+{
+        $this->validator($request->all())->validate();
+
+        event(new Registered($user = $this->create($request->all())));
+
+        return $this->registered($request, $user)
+                        ?: redirect($this->redirectPath());
+}
+
+
 }
