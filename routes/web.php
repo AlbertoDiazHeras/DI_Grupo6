@@ -14,10 +14,15 @@ Auth::routes();
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/home', 'UserController@index');
-
-Route::get('/home', 'HomeController@index')->name('home');
-
-Route::get('/admin', 'UserController@index');
-
+//Ruta verificar correo
 Route::get('/register/verify/{code}', 'HomeController@verify');
+//Rutas administrador
+Route::get('/admin', 'UserController@index');
+//Route::post('/admin/eliminar', 'UserController@destroy');
+//Route::get('/admin/cerrar', 'LoginController@index');
+//Rutas usuarios
+Route::resource('inicio', 'UserController');
+
+//Rutas ni idea
+Route::get('/home', 'HomeController@index');
+

@@ -18,7 +18,7 @@ class UserController extends Controller
         $users = User::all();
         $user=Auth::user();
             if(!auth()->check() || !$user->Admin()){
-                return view('home');
+                return view('usuarios.inicio');
             }
             if ($user->Admin()) {
                 return view('admin.panelControl',['users'=>$users]);

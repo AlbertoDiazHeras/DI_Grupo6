@@ -24,12 +24,12 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        return view('usuarios.inicio');
     }
-    public function inicio()
+    /*public function inicio()
     {
-        return view('home');
-    }
+        return view('usuarios.home');
+    }*/
     public function verify($code)
     {
         $user = User::where('code', $code)->first();
@@ -41,7 +41,7 @@ class HomeController extends Controller
         $user->code = null;
         $user->save();
     
-        return redirect('/home');
+        return redirect('/usuarios.inicio');
     }
 
     public function register(Request $request)

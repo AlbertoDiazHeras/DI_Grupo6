@@ -3159,6 +3159,8 @@ table.text-center th {
  *
  * https://github.com/lipis/bootstrap-social
  */
+
+
 .btn-social {
   position: relative;
   padding-left: 44px;
@@ -3827,6 +3829,7 @@ table.text-center th {
   -o-transform: rotate(30deg);
   transform: rotate(30deg);
 }
+
 #add-new-event {
   -webkit-transition: all linear 0.3s;
   -o-transition: all linear 0.3s;
