@@ -7,7 +7,7 @@ use Faker\Generator as Faker;
 
 $factory->define(Delivery_term::class, function (Faker $faker) {
     return [
-        'description'=>$faker->text,
+        'description'=>$faker->name,
         'deleted'=>false,
     ];
 });

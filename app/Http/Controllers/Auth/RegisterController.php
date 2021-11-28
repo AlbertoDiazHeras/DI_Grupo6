@@ -71,7 +71,7 @@ class RegisterController extends Controller
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
             'company_id'=>1,
-            'type'=>'admin',
+            'type'=>'u',
             'email_confirmed'=>0,
             'actived'=>0,
             'iscontact'=>0,

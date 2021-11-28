@@ -4,6 +4,7 @@ namespace almagest\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Auth\Events\Registered;
+use almagest\User;
 
 class HomeController extends Controller
 {
@@ -26,10 +27,7 @@ class HomeController extends Controller
     {
         return view('usuarios.inicio');
     }
-    /*public function inicio()
-    {
-        return view('usuarios.home');
-    }*/
+
     public function verify($code)
     {
         $user = User::where('code', $code)->first();
@@ -37,11 +35,11 @@ class HomeController extends Controller
         if (! $user)
             return redirect('/');
     
-        $user->email_confirmed = '1';
+        $user->email_confirmed = 1;
         $user->code = null;
         $user->save();
     
-        return redirect('/usuarios.inicio');
+        return redirect('/login');
     }
 
     public function register(Request $request)

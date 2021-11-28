@@ -230,7 +230,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
             </div>
           </div>
 
-          <!-- search form (Optional) -->
+          <!-- search form (Optional)
           <form action="#" method="get" class="sidebar-form">
             <div class="input-group">
               <input type="text" name="q" class="form-control" placeholder="Search...">
@@ -239,21 +239,14 @@ scratch. This page gets rid of all links and provides the needed markup only.
               </span>
             </div>
           </form>
-          <!-- /.search form -->
+         /.search form -->
 
           <!-- Sidebar Menu -->
           <ul class="sidebar-menu">
-            <li class="header">HEADER</li>
+            <li class="header">ALMAGEST</li>
             <!-- Optionally, you can add icons to the links -->
-            <li class="active"><a href="#"><i class="fa fa-link"></i> <span>Link</span></a></li>
-            <li><a href="#"><i class="fa fa-link"></i> <span>Another Link</span></a></li>
-            <li class="treeview">
-              <a href="#"><i class="fa fa-link"></i> <span>Multilevel</span> <i class="fa fa-angle-left pull-right"></i></a>
-              <ul class="treeview-menu">
-                <li><a href="#">Link in level 2</a></li>
-                <li><a href="#">Link in level 2</a></li>
-              </ul>
-            </li>
+            <li class="active"><a href="http://127.0.0.1:8000/admin"><i class="fa fa-link"></i> <span>Ususarios</span></a></li>
+            <li><a href="http://127.0.0.1:8000/articulos"><i class="fa fa-link"></i> <span>Artículos</span></a></li>
           </ul><!-- /.sidebar-menu -->
         </section>
         <!-- /.sidebar -->
@@ -263,10 +256,6 @@ scratch. This page gets rid of all links and provides the needed markup only.
       <div class="content-wrapper">
         <!-- Content Header (Page header) -->
         <section class="content-header">
-          <h1>
-            Usuarios registrados
-            <!--<small>Optional description</small>-->
-          </h1>
           <ol class="breadcrumb">
             <li><a href="#"><i class="fa fa-dashboard"></i> Level</a></li>
             <li class="active">Here</li>

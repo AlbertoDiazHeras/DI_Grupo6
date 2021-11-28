@@ -21,7 +21,7 @@ $factory->define(User::class, function (Faker $faker) {
         'firstname' => $faker->name,
         'secondname' => $faker->lastName,
         'company_id'=>1,
-        'type'=>'trabajador',
+        'type'=>'u',
         'actived'=>false,
         'iscontact'=>false,
         'deleted'=>0,

@@ -1,6 +1,9 @@
 @extends('admin.layout')
 
 @section('content')
+<h1>
+  Usuarios registrados
+</h1>
 <table class="table">
   <thead>
     <tr>
@@ -22,10 +25,10 @@
       <th>{{$user->email}}</th>
       <th>{{$user->created_at}}</th>
       <td>{{$user->actived}}</td>
-        <td><button type="button" class="btn btn-success"><a href="{{ url('/admin/activar') }}"">Activar</a></button></td>
-        <td><button type="button" class="btn btn-warning">Desactivar</button></td>
-        <td><button type="button" class="btn btn-danger"><a href="{{ url('/admin/eliminar') }}">Eliminar</a></button></td>
-        <td><button type="button" class="btn btn-primary">Editar</button></td>
+        <td><button type="button" class="btn btn-success"><a href="{{route('admin.activar',['id' => $user->id])}}">Activar</a></button></td>
+        <td><button type="button" class="btn btn-warning"><a href="{{route('admin.desactivar',['id' => $user->id])}}">Desactivar</a></button></td>
+        <td><button type="button" class="btn btn-danger"><a href="{{route('admin.eliminar',['id' => $user->id])}}">Eliminar</a></button></td>
+        <td><button type="button" class="btn btn-primary"><a href="{{route('admin.editar',['id' => $user->id])}}">Editar</a></button></td>
     </tr>
     @endforeach
   </tbody>
