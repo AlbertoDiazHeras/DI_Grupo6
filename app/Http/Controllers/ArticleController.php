@@ -2,7 +2,7 @@
 
 namespace almagest\Http\Controllers;
 
-use Illuminate\Http\Request;
+use Request;
 use almagest\Article;
 
 class ArticleController extends Controller
@@ -19,30 +19,41 @@ class ArticleController extends Controller
         
     }
 
-    public function aniadirArticulo()
-    {
+    public function aniadirArticulo(){
+        $respuestas=array();
+        $respuesta=(Request::input('name'));
+        $respuestas=(Request::all());
         $articulo=Article::create([
-            'name' => 'Raul',
-            'description'=> 'Raul',
-            'price_min'=> 4,
-            'price_max'=> 5,
-            'color_name'=> 'white',
-            'weight'=> 5,
-            'size'=> 5,
-            'family_id'=> 1,
+            'name' => $respuestas['name'],
+            'description'=> $respuestas['description'],
+            'price_min'=> $respuestas['number_min'],
+            'price_max'=> $respuestas['number_max'],
+            'color_name'=> $respuestas['color_name'],
+            'weight'=> $respuestas['weight'],
+            'size'=> $respuestas['size'],
+            'family_id'=> $respuestas['family_id'],
             'deleted'=> 0
         ]);
         $articles = Article::all();
         return view('admin.articulos',['articles'=>$articles]);
     }
 
-    public function borrar()
+    public function borrar($id)
     {
-        
+        Article::destroy($id);
+        $articles = Article::all();
+        return view('admin.articulos',['articles'=>$articles]);
+
     }
 
-    public function actualizar()
+    public function alertaBorrar($id)     
     {
-    
+        return view('admin.alertaBorrar',['id'=>$id]);
+
+    }
+
+    public function actualizar($id)
+    {
+        return view('admin.actualizar',['id'=>$id]);
     }
 }

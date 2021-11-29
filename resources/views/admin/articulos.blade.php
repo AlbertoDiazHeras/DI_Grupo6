@@ -19,7 +19,7 @@
       <th scope="row">{{$articulo->id}}</th>
       <td>{{$articulo->name}}</td>
       <td>{{$articulo->description}}</td>
-        <td><button type="button" class="btn btn-danger"><a href="{{route('articulo.borrar',['id' => $articulo->id])}}">Borrar</a></button></td>
+        <td><button type="button" class="btn btn-danger"><a href="{{route('admin.alertaBorrar',$articulo->id)}}">Borrar</a></button></td>
         <td><button type="button" class="btn btn-primary"><a href="{{route('articulo.actualizar',['id' => $articulo->id])}}">Actualizar</a></button></td>
     </tr>
     @endforeach

@@ -20,7 +20,7 @@ Route::get('/register/verify/{code}', 'HomeController@verify')->name('usuarios.v
 Route::get('/admin', 'UserController@index')->name('admin.panelControl');
 Route::get('/articulos', 'ArticleController@index')->name('admin.articulos');
 Route::get('/articulo/crear','ArticleController@crear')->name('articulo.crear');
-Route::get('/articulo/aniadir','ArticleController@aniadirArticulo')->name('admin.aniadir');
+Route::post('/articulo/aniadir','ArticleController@aniadirArticulo')->name('admin.aniadir');
 
 //Route::get('/admin/cerrar', 'LoginController@index');
 //Rutas usuarios
@@ -35,10 +35,11 @@ Route::get('/admin/{id}/eliminar','UserController@eliminar')->name('admin.elimin
 Route::get('/admin/{id}/editar','UserController@editar')->name('admin.editar');
 //Rutas ni idea
 Route::get('/home', 'HomeController@index');
-//Ruta que me edita al usuario
+//Ruta edita usuario
 Route::post('/admin/actualizar/{id}','UserController@actualizar')->name('admin.actualizar');
 //Borrar artículo
 Route::get('/articulo/{id}/borrar','ArticleController@borrar')->name('articulo.borrar');
+Route::get('/articulo/{id}/alerta','ArticleController@alertaBorrar')->name('admin.alertaBorrar');
 //Actualizar artículo
 Route::get('/articulo/{id}/actualizar','ArticleController@actualizar')->name('articulo.actualizar');
 //Crear artículo
