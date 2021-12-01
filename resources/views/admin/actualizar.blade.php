@@ -107,12 +107,37 @@
                         <div class="form-group{{ $errors->has('size') ? ' has-error' : '' }}">
                             <label for="size" class="col-md-4 control-label">Tamaño</label>
                             <div class="col-md-6">
-
-
-                            <?php
-                                echo Form::select('size', [1,1]);
+                            
+                            <label for="size" class="col-md-4 control-label">Número
+                            <?php  
+                                echo Form::radio('name', 'value', true);
+                                echo Form::select('numero', ['1'=>'nº1','2'=>'nº2','3'=>'nº3']);
                             ?>
-                        
+                            </label></br></br></br>
+                            <label for="size" class="col-md-4 control-label">Valor
+                            <?php
+                                echo Form::radio('name', 'value', true);
+                                echo Form::select('valor', ['3'=>'3cm','5'=>'5cm','10'=>'10cm','20'=>'20cm','30'=>'30cm']);
+                            ?>
+                            </label></br></br></br>
+                            
+                            
+                            
+                            <label for="size" class="col-md-4 control-label">Compuesto
+                            <?php
+                                echo Form::radio('name', 'value', true);
+                            ?>
+                            </label></br>
+                            <label for="size" class="col-md-4 control-label">Ancho
+                            <?php
+                                echo Form::select('valor1', ['5'=>'5cm','10'=>'10cm','15'=>'15cm','20'=>'20cm','30'=>'30cm','50'=>'50cm','60'=>'60cm']);
+                            ?>
+                            </label>
+                            <label for="size" class="col-md-4 control-label">Alto
+                            <?php   
+                                echo Form::select('valor2', ['0.25'=>'0.25cm','0.5'=>'0.5cm','1'=>'1cm','2'=>'2cm','5'=>'5cm','25'=>'25cm']);
+                            ?>
+                            </label>
                         
                                 @if ($errors->has('size'))
                                     <span class="help-block">

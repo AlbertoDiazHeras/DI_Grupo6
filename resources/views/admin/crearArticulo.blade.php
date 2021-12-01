@@ -11,15 +11,15 @@
                     <form class="form-horizontal" method="POST" action="{{ route('admin.aniadir') }}">
                         {{ csrf_field() }}
 
-                        <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
-                            <label for="name" class="col-md-4 control-label">Nombre</label>
+                        <div class="form-group{{ $errors->has('nombre') ? ' has-error' : '' }}">
+                            <label for="nombre" class="col-md-4 control-label">Nombre</label>
 
                             <div class="col-md-6">
-                                <input id="name" type="text" class="form-control" name="name" required>
+                                <input id="nombre" type="text" class="form-control" name="nombre" required>
 
-                                @if ($errors->has('name'))
+                                @if ($errors->has('nombre'))
                                     <span class="help-block">
-                                        <strong>{{ $errors->first('name') }}</strong>
+                                        <strong>{{ $errors->first('nombre') }}</strong>
                                     </span>
                                 @endif
                             </div>
@@ -76,7 +76,7 @@
 
                             <div class="col-md-6">
                             <?php
-                                echo Form::select('color_name', ['Blanco' => 'Blanco', 'Azual' => 'Azul', 'Amarillo' => 'Amarillo', 'Rojo' => 'Rojo', 'Verde' => 'Verde', 'Ocre' => 'Ocre', 'Violeta' => 'Violeta']);
+                                echo Form::select('color_name', ['Blanco' => 'Blanco', 'Azul' => 'Azul', 'Amarillo' => 'Amarillo', 'Rojo' => 'Rojo', 'Verde' => 'Verde', 'Ocre' => 'Ocre', 'Violeta' => 'Violeta']);
                             ?>
                             
 
@@ -87,13 +87,18 @@
                                 @endif
                             </div>
                         </div>
-
+                        
                         <div class="form-group{{ $errors->has('weight') ? ' has-error' : '' }}">
-                            <label for="weight" class="col-md-4 control-label">Peso</label>
+                            <label for="weight" class="col-md-4 control-label">
+                            Peso
+                            <?php  
+                                echo Form::radio('peso/tamanio', 'value1',true);
+                            ?>
+                            </label>
 
                             <div class="col-md-6">
                             <?php
-                                echo Form::select('weight', ['0.25' => '0,25 kg', '0.50' => '0,50 kg', '1' => '1 kg', '2' => '2 kg', '5' => '5 kg', '25' => '25 kg']);
+                                echo Form::select('peso', ['0.25' => '0,25 kg', '0.50' => '0,50 kg', '1' => '1 kg', '2' => '2 kg', '5' => '5 kg', '25' => '25 kg']);
                             ?>
 
                                 @if ($errors->has('weight'))
@@ -105,14 +110,42 @@
                         </div>
 
                         <div class="form-group{{ $errors->has('size') ? ' has-error' : '' }}">
-                            <label for="size" class="col-md-4 control-label">Tamaño</label>
-                            <div class="col-md-6">
-
-
-                            <?php
-                                echo Form::select('size', [1,1]);
+                        <?php  
+                                echo Form::radio('peso/tamanio', 'value2');
                             ?>
-                        
+                            <label for="size" class="col-md-4 control-label">Tamaño</label></br>
+                            <div class="col-md-6">
+                            
+                            <label for="size" class="col-md-4 control-label">Número
+                            <?php  
+                                echo Form::radio('name', 'numero');
+                                echo Form::select('numero', ['1'=>'nº1','2'=>'nº2','3'=>'nº3']);
+                            ?>
+                            </label></br></br></br>
+                            <label for="size" class="col-md-4 control-label">Valor
+                            <?php
+                                echo Form::radio('name', 'valor');
+                                echo Form::select('valor', ['3'=>'3cm','5'=>'5cm','10'=>'10cm','20'=>'20cm','30'=>'30cm']);
+                            ?>
+                            </label></br></br></br>
+                            
+                            
+                            
+                            <label for="size" class="col-md-4 control-label">Compuesto
+                            <?php
+                                echo Form::radio('name', 'compuesto');
+                            ?>
+                            </label></br>
+                            <label for="size" class="col-md-4 control-label">Ancho
+                            <?php
+                                echo Form::select('ancho', ['5'=>'5cm','10'=>'10cm','15'=>'15cm','20'=>'20cm','30'=>'30cm','50'=>'50cm','60'=>'60cm']);
+                            ?>
+                            </label>
+                            <label for="size" class="col-md-4 control-label">Alto
+                            <?php   
+                                echo Form::select('alto', ['0.25'=>'0.25cm','0.5'=>'0.5cm','1'=>'1cm','2'=>'2cm','5'=>'5cm','25'=>'25cm']);
+                            ?>
+                            </label>
                         
                                 @if ($errors->has('size'))
                                     <span class="help-block">
@@ -126,9 +159,11 @@
                             <label for="family_id" class="col-md-4 control-label">Familia</label>
 
                             <div class="col-md-6">
-                            <?php
-                                echo Form::select('family_id', [1,1]);
-                            ?>
+                                <select class="form-control select2" id="family_id" name="family">
+                                @foreach ($familias as $familia)
+                                    <option value="{{$familia->id}}">{{ $familia->name}}</option>
+                                @endforeach
+                                </select>
 
                                 @if ($errors->has('family_id'))
                                     <span class="help-block">

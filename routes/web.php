@@ -38,8 +38,7 @@ Route::get('/home', 'HomeController@index');
 //Ruta edita usuario
 Route::post('/admin/actualizar/{id}','UserController@actualizar')->name('admin.actualizar');
 //Borrar artículo
-Route::get('/articulo/{id}/borrar','ArticleController@borrar')->name('articulo.borrar');
-Route::get('/articulo/{id}/alerta','ArticleController@alertaBorrar')->name('admin.alertaBorrar');
+Route::delete('/articulo/{id}/borrar','ArticleController@borrar')->name('articulo.borrar');
 //Actualizar artículo
 Route::get('/articulo/{id}/actualizar','ArticleController@actualizar')->name('articulo.actualizar');
 //Crear artículo

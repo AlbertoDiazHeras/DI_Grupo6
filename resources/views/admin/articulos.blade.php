@@ -19,7 +19,13 @@
       <th scope="row">{{$articulo->id}}</th>
       <td>{{$articulo->name}}</td>
       <td>{{$articulo->description}}</td>
-        <td><button type="button" class="btn btn-danger"><a href="{{route('admin.alertaBorrar',$articulo->id)}}">Borrar</a></button></td>
+        <td>
+          <form action="{{route('articulo.borrar',$articulo->id)}}" method="post">
+          @csrf
+          @method ('DELETE')
+          <button type="submit" class="btn btn-danger" onclick="return confirm('Deseas eliminar')">Eliminar</button></button>
+          </form>
+        </td>
         <td><button type="button" class="btn btn-primary"><a href="{{route('articulo.actualizar',['id' => $articulo->id])}}">Actualizar</a></button></td>
     </tr>
     @endforeach
