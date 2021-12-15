@@ -41,7 +41,7 @@ Route::post('/admin/actualizar/{id}','UserController@actualizar')->name('admin.a
 Route::delete('/articulo/{id}/borrar','ArticleController@borrar')->name('articulo.borrar');
 //Actualizar artículo
 Route::get('/articulo/{id}/actualizar','ArticleController@actualizar')->name('articulo.actualizar');
-//Crear artículo
+
 
 
 
