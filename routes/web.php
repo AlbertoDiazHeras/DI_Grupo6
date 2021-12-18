@@ -42,6 +42,8 @@ Route::delete('/articulo/{id}/borrar','ArticleController@borrar')->name('articul
 //Actualizar artículo
 Route::get('/articulo/{id}/actualizar','ArticleController@actualizar')->name('articulo.actualizar');
 
+Route::get('/usuarios','UserController@index')->name('admin.activar');
+
 
 
 

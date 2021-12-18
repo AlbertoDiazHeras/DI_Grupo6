@@ -199,7 +199,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                       <a href="#" class="btn btn-default btn-flat">Profile</a>
                     </div>
                     <div class="pull-right">
-                      <a href="{{ url('/admin/cerrar') }}" class="btn btn-default btn-flat">Sign out</a>
+                      <a href="{{ url('home') }}" class="btn btn-default btn-flat">Sign out</a>
                     </div>
                   </li>
                 </ul>
@@ -245,7 +245,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
           <ul class="sidebar-menu">
             <li class="header">ALMAGEST</li>
             <!-- Optionally, you can add icons to the links -->
-            <li class="active"><a href="http://127.0.0.1:8000/admin"><i class="fa fa-link"></i> <span>Ususarios</span></a></li>
+            <li class="active"><a href="http://127.0.0.1:8000/admin"><i class="fa fa-link"></i> <span>Usuarios</span></a></li>
             <li><a href="http://127.0.0.1:8000/articulos"><i class="fa fa-link"></i> <span>Artículos</span></a></li>
           </ul><!-- /.sidebar-menu -->
         </section>
