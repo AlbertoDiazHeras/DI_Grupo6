@@ -108,7 +108,8 @@ class UserController extends Controller
     public function editar($id) {
         $user = User::find($id);
         return view('admin.editar', ['user' => $user]);
-    }   
+    }
+
     protected function actualizar(Request $request,$id) {
         $users = User::findOrFail($id);
         $users->firstname = $request->firstname;
@@ -127,4 +128,12 @@ class UserController extends Controller
         $user->save();
         return redirect()->route('admin.panelControl');
     }
+
+    protected function empresa($id) {
+        $user = User::findOrFail($id);
+        $company = Company::findOrFail($user->company_id);
+        return view('usuarios.empresa', ['company' => $company]);
+    }
+
+
 }

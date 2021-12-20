@@ -44,6 +44,14 @@ Route::get('/articulo/{id}/actualizar','ArticleController@actualizar')->name('ar
 
 Route::get('/usuarios','UserController@index')->name('admin.activar');
 
+Route::get('/empresa','CompanyController@index')->name('usuarios.empresa');
+
+Route::post('/actualizar', 'CompanyController@actualizar')->name('actualizar.empresa');
+
+Route::get('/pedidos','CompanyController@pedidos')->name('usuarios.pedidos');
+
+Route::get('/actualizar','CompanyController@inicio')->name('usuarios.inicio');
+
 
 
 

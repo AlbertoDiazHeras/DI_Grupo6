@@ -13,7 +13,7 @@ class Company extends Model
     public $timestamps=true;
 
     protected $fillable =[
-        'name','address','city','cif','email','phone'
+        'name','address','city','cif','email','phone','del_term_id','transport_id','payment_term_id','bank_entity_id','discount_id'
     ];
 
     public function users(){
