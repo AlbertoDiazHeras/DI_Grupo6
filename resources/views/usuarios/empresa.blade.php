@@ -238,18 +238,23 @@
                                 </button>
                             </div>
                         </div>
+                    </form>
                         <div class="form-group">
                             <div class="col-md-6 col-md-offset-4">
-                                <button type="" class="btn btn-primary">
+                                <a href="{{route('pdf')}}">
+                                    <button class="btn btn-primary">
                                     Crear PDF ficha de la empresa
-                                </button>
+                                    </button>
+                                </a>
                             </div>
                         </div>
                         <div class="form-group">
                             <div class="col-md-6 col-md-offset-4">
-                                <button type="" class="btn btn-primary">
-                                    Crear PDF ficha de productos
-                                </button>
+                                <a href="{{route('pdf2')}}">
+                                    <button type="" class="btn btn-primary">
+                                        Crear PDF ficha de productos
+                                    </button>
+                                </a>
                             </div>
                         </div>
                         <div class="form-group">
@@ -259,7 +264,6 @@
                                 </button>
                             </div>
                         </div>
-                    </form>
                 </div>
             </div>
         </div>

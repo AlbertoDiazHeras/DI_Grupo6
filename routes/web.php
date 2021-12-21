@@ -52,6 +52,10 @@ Route::get('/pedidos','CompanyController@pedidos')->name('usuarios.pedidos');
 
 Route::get('/actualizar','CompanyController@inicio')->name('usuarios.inicio');
 
+Route::get('pdf', 'InformesController@general')->name('pdf');
+
+Route::get('pdf2', 'InformesController@general2')->name('pdf2');
+
 
 
 
