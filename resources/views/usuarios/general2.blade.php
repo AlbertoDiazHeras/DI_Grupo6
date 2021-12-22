@@ -15,27 +15,29 @@
                     <th colspan="4">Nombre de la empresa</th>
                 </tr>
                 <tr>
-                    <th>products.id</th>
-                    <th>families.name</th>
-                    <th>article.name</th>
-                    <th>article.description</th>
-                    <th>product.price</th>
-                    <th>article.color_name</th>
-                    <th>article.weight</th>
-                    <th>article.size</th>
+                    <th>Id</th>
+                    <th>Nombre familia</th>
+                    <th>Nombre</th>
+                    <th>Descripción</th>
+                    <th>Precio</th>
+                    <th>Color</th>
+                    <th>Peso</th>
+                    <th>Tamaño</th>
                 </tr>
             </thead>
             <tbody>
+            @foreach($productos as $product)
                 <tr>
-                    <td>products.id</td>
-                    <td>families.name</td>
-                    <td>article.name</td>
-                    <td>article.description</td>
-                    <td>product.price</td>
-                    <td>article.color_name</td>
-                    <td>article.weight</td>
-                    <td>article.size</td>
+                    <td>{{$product->id}}</td>
+                    <td>{{$product->article_id}}</td>
+                    <td>{{$product->company_id}}</td>
+                    <td>{{$product->article_description}}</td>
+                    <td>{{$product->price}}</td>
+                    <td>{{$product->color_name}}</td>
+                    <td>{{$product->weight}}</td>
+                    <td>{{$product->size}}</td> 
                 </tr>
+                @endforeach
             </tbody>
         </table>
     </body>
