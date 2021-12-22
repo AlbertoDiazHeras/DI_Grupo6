@@ -58,9 +58,7 @@ class CompanyController extends Controller
         $company->payment_term_id = $respuestas['condiciones'];
         $company->bank_entity_id = $respuestas['entidad'];
         $company->discount_id = $respuestas['descuento'];*/
-        $company->save();
-        return redirect()->route('usuarios.inicio');
-
+        $company->save();   
+        return redirect()->route('usuarios.empresa');
     }
-
 }

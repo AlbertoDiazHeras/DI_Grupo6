@@ -12,11 +12,11 @@
             <thead>
                 <tr>
                     <th colspan="4">CATÁLOGO de productos de la empresa</th>
-                    <th colspan="4">Nombre de la empresa</th>
+                    <th colspan="4">{{$company->name}}</th>
                 </tr>
                 <tr>
-                    <th>Id</th>
-                    <th>Nombre familia</th>
+                    <th>Producto</th>
+                    <th>Id Familia</th>
                     <th>Nombre</th>
                     <th>Descripción</th>
                     <th>Precio</th>
@@ -27,17 +27,21 @@
             </thead>
             <tbody>
             @foreach($productos as $product)
-                <tr>
-                    <td>{{$product->id}}</td>
-                    <td>{{$product->article_id}}</td>
-                    <td>{{$product->company_id}}</td>
-                    <td>{{$product->article_description}}</td>
-                    <td>{{$product->price}}</td>
-                    <td>{{$product->color_name}}</td>
-                    <td>{{$product->weight}}</td>
-                    <td>{{$product->size}}</td> 
-                </tr>
+                @foreach($articulos as $articulo)
+                    @if($product->article_id == $articulo->id)
+                        <tr>
+                            <td>{{$product->id}}</td>
+                            <td>{{$product->family_id}}</td>
+                            <td>{{$articulo->name}}</td>
+                            <td>{{$articulo->description}}</td>
+                            <td>{{$product->price}}</td>
+                            <td>{{$product->color_name}}</td>
+                            <td>{{$product->weight}}</td>
+                            <td>{{$product->size}}</td> 
+                        </tr>
+                    @endif
                 @endforeach
+            @endforeach
             </tbody>
         </table>
     </body>

@@ -12,7 +12,7 @@
             <thead>
                 <tr>
                     <th colspan="5">Ficha de empresa</th>
-                    <th>Código</th>
+                    <th>{{$company->id}}</th>
                 </tr>
             </thead>
             <tbody>
@@ -31,27 +31,27 @@
                     <td>CIF/DNI</td>
                     <td colspan="2">{{$company->cif}}</td>                    
                 </tr>
-                <tr>
-                    <td colspan="2">Persona de Contacto: </td>
-                    <td colspan="3">Cargo: </td>
-                </tr>
+                    <tr>
+                        <td colspan="2">Persona de Contacto: {{$usuarioContacto }} </td>
+                        <td colspan="3">Cargo: Gerente </td>
+                    </tr>
                 <tr>
                     <td colspan="2">Correo electrónico: {{$company->email}}</td>
                     <td colspan="3">Teléfono: {{$company->phone}}</td>
                 </tr>
                 <tr> 
-                    <td colspan="3">Plazo de entrega: {{$company->del_term_id}}</td>
-                    <td colspan="3">Descuentos: {{$company->discount_id}}</td>
+                    <td colspan="3">Plazo de entrega: {{$plazo}}</td>
+                    <td colspan="3">Descuentos: {{$descuento}}</td>
                 </tr>
                 <tr>
-                    <td colspan="6">Portes: {{$company->transport_id}}</td>
+                    <td colspan="6">Portes: {{$portes}}</td>
                 </tr>
                 <tr>
-                    <td colspan="6">Condiciones de pago: {{$company->payment_term_id}}</td>
+                    <td colspan="6">Condiciones de pago: {{$condicion}}</td>
 
                 </tr>
                 <tr>
-                    <td colspan="6">Entidad bancaria: {{$company->bank_entity_id}}</td>
+                    <td colspan="6">Entidad bancaria: {{$banco}}</td>
                 </tr>
             </tbody>
         </table>
