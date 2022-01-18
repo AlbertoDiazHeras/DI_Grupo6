@@ -175,6 +175,7 @@ return [
         almagest\Providers\EventServiceProvider::class,
         almagest\Providers\RouteServiceProvider::class,
         Barryvdh\DomPDF\ServiceProvider::class,
+        Laravel\Passport\PassportServiceProvider::class,
 
     ],
 
