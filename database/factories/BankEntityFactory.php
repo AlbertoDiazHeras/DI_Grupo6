@@ -8,7 +8,7 @@ use Faker\Generator as Faker;
 $factory->define(Bank_entity::class, function (Faker $faker) {
     return [
         'name' => $faker->name,
-        'ccc' => $faker->name,
+        'ccc' => $faker->word,
         'deleted' => false,
     ];
 });

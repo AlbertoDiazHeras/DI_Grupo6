@@ -23,5 +23,8 @@ class DatabaseSeeder extends Seeder
         factory(\almagest\Family::class, 8)->create();
         factory(\almagest\Article::class, 10)->create();
         factory(\almagest\Product::class, 4)->create();
+        factory(\almagest\Order::class, 4)->create();
+        factory(\almagest\Delivery_notes::class, 4)->create();
+        factory(\almagest\Invoice::class, 4)->create();
     }
 }

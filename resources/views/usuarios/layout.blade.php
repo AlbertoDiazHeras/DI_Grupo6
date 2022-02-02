@@ -158,6 +158,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
             <!-- Optionally, you can add icons to the links -->
             <li class="active"><a href="http://127.0.0.1:8000/empresa"><i class="fa fa-link"></i> <span>Datos empresa</span></a></li>
             <li><a href="http://127.0.0.1:8000/pedidos"><i class="fa fa-link"></i> <span>Pedidos</span></a></li>
+            <li><a href="http://127.0.0.1:8000/albaranes"><i class="fa fa-link"></i> <span>Albaranes</span></a></li>
+            <li><a href="http://127.0.0.1:8000/facturas"><i class="fa fa-link"></i> <span>Facturas</span></a></li>
           </ul><!-- /.sidebar-menu -->
         </section>
         <!-- /.sidebar -->

@@ -16,9 +16,9 @@ class CreateInvoicesTable extends Migration
         Schema::create('invoices', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->Integer('num');
-            $table->date('issuedate');
+            $table->date('issue_date');
             $table->unsignedBigInteger('delivery_note_id');
-            $table->foreign('delivery_note_id')->references('id')->on('delivery_notes')->onUpdate("cascade");
+            $table->foreign('delivery_note_id')->references('id')->on('delivery_notes')->onUpdate("cascade")->onDelete("cascade");
             $table->tinyInteger('deleted');
             $table->timestamps();
         });

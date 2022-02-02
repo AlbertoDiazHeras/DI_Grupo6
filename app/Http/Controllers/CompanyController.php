@@ -10,6 +10,9 @@ use almagest\Transport;
 use almagest\Payment_term;
 use almagest\Bank_entity;
 use almagest\Discount;
+use almagest\Order;
+use almagest\Invoice;
+use almagest\Delivery_notes;
 use Auth;
 
 class CompanyController extends Controller
@@ -31,16 +34,27 @@ class CompanyController extends Controller
         return view('usuarios.empresa',['company'=>$company,'users'=>$users,'entrega'=>$entrega,'prices'=>$prices,'condicion'=>$condiciones,'entidad'=>$entidad,'descuento'=>$descuento,'persona'=>$persona]);
     }
 
-    public function pedidos()
-    {   
-        return view('usuarios.pedidos');
+    public function pedidos(){
+        $pedidos = Order::select('num','issue_date','origin_company_id','target_company_id')->where('target_company_id','=', auth()->user()->company_id)->get();
+        return view('usuarios.pedidos',['pedidos'=>$pedidos]);
+    }
+    public function albaranes(){
+        $pedidos = Order::select('id')->where('target_company_id','=', auth()->user()->company_id)->get()->toarray();
+        $albaranes = Delivery_notes::select('num','issue_date','order_id')->whereIn('order_id', $pedidos)->get();
+        return view('usuarios.albaranes',['albaranes'=>$albaranes,'pedidos'=>$pedidos]);
+    }
+    public function facturas(){
+        $pedidos = Order::select('id')->where('target_company_id','=', auth()->user()->company_id)->get()->toarray();
+        $albaranes = Delivery_notes::select('id')->whereIn('order_id', $pedidos)->get();
+        $facturas = Invoice::select('num','issue_date','delivery_note_id')->whereIn('delivery_note_id', $albaranes)->get();
+        return view('usuarios.facturas',['facturas'=>$facturas]);
     }
 
+    
     public function inicio()
     {   
         return view('usuarios.inicio');
     }
-
     public function actualizar(){  
         $userCompany = Auth::user()->company_id;
         $respuestas=array();

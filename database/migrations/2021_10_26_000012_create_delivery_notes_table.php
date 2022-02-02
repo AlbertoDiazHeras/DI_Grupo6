@@ -16,9 +16,9 @@ class CreateDeliveryNotesTable extends Migration
         Schema::create('delivery_notes', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('num');
-            $table->date('issuedate');
+            $table->date('issue_date');
             $table->unsignedBigInteger('order_id');
-            $table->foreign('order_id')->references('id')->on('orders')->onUpdate("cascade");
+            $table->foreign('order_id')->references('id')->on('orders')->onUpdate("cascade")->onDelete("cascade");
             $table->tinyInteger('deleted');
             $table->timestamps();
         });

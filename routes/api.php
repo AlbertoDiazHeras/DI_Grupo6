@@ -18,9 +18,12 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::post('register', 'API\RegisterController@register');
-
-Route::post('login', 'API\RegisterController@login');
+Route::post('login', 'API\LoginController@login');
+Route::post('delivery_notes/sign/{id}', 'API\DeliveryNotesController@destroy');
 
 Route::middleware('auth:api')->group( function () {
-	Route::resource('products', 'API\ProductController');
+	Route::resource('orders', 'API\OrdersController');
+    Route::resource('delivery_notes', 'API\DeliveryNotesController');
+    Route::resource('invoices', 'API\InvoicesController');
+    
 });

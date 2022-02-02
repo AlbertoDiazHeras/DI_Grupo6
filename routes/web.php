@@ -50,6 +50,10 @@ Route::post('/actualizar', 'CompanyController@actualizar')->name('actualizar.emp
 
 Route::get('/pedidos','CompanyController@pedidos')->name('usuarios.pedidos');
 
+Route::get('/albaranes','CompanyController@albaranes')->name('usuarios.albaranes');
+
+Route::get('/facturas','CompanyController@facturas')->name('usuarios.facturas');
+
 Route::get('/actualizar','CompanyController@inicio')->name('usuarios.inicio');
 
 Route::get('pdf', 'InformesController@general')->name('pdf');
