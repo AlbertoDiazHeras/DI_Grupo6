@@ -7,7 +7,7 @@ Si no estamos registrados esta sería nuestra pestaña de **REGISTRO**, un formu
 
 ![RegistroAlmagest](https://user-images.githubusercontent.com/93120404/155230000-1bfca47b-759c-4748-afb4-42801f93ef41.png)
 
-Una vez registrados recibiremos un email de confirmación en nuestro correo. Debemos confirmarlo y trás el administrador activar la cuenta podremos acceder a la aplicación.
+Una vez registrados recibiremos un email de confirmación en nuestro correo. Debemos confirmarlo y tras el administrador activar la cuenta podremos acceder a la aplicación.
 
 ![confirmacion](https://user-images.githubusercontent.com/93120404/155230518-804cc1c4-b43e-4962-a342-4a045861c01f.png)
 
