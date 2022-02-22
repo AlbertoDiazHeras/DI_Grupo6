@@ -1,6 +1,6 @@
 # Manual Usuario Almagest
 En la pantalla de inicio de **Almagest** podemos acceder a la aplicación si ya estamos registrados mediante el botón **ACCEDER** o registrarnos mediante el botón **REGISTRO**.
-![](file:///C:/Users/Alberto/Documents/inicioAlmagest.png)
+![inicioAlmagest](https://user-images.githubusercontent.com/93120404/155229643-b67e9c52-2a78-4262-80a0-73c1d05ae286.png)
 Si no estamos registrados esta sería nuestra pestaña de **REGISTRO**, un formulario básico donde debemos añadir nuestro nombre,email y contraseña.
 ![](file:///C:/Users/Alberto/Documents/RegistroAlmagest.png)
 Una vez registrados podemos acceder a la aplicación.
