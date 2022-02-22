@@ -60,6 +60,8 @@ Route::get('pdf', 'InformesController@general')->name('pdf');
 
 Route::get('pdf2', 'InformesController@general2')->name('pdf2');
 
+Route::post('/aniadirArticulo', 'ArticleController@store');
 
+Route::post('/registrarUsuario', 'UserController@store');
 
 

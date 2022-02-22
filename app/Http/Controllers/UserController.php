@@ -68,5 +68,24 @@ class UserController extends Controller
         return view('usuarios.empresa', ['company' => $company]);
     }
 
+    
+    public function store(Request $request)
+    {
+        $data = request()->validate([
+            'firstname' => '',
+            'secondname'=>'',
+            'email' => '',
+            'password' => '',
+            'company_id' => '',
+            'iscontact' => '',
+            'deleted' => '',
+            'actived' => '',
+            'email_confirmed' => '',
+            'type' => ''
+        ]);
+
+        User::create($data);
+    }
+    
 
 }

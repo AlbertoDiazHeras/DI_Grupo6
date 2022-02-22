@@ -87,4 +87,22 @@ class ArticleController extends Controller
     {
         return view('admin.actualizar',['id'=>$id]);
     }
+
+    public function store(Request $request)
+{
+        $data = request()->validate([
+            'name' => '',
+            'description' => '',
+            'price_min'=>'',
+            'price_max'=> '',
+            'color_name'=> '',
+            'weight'=> '',
+            'size'=> '',
+            'family_id'=> '',
+            'deleted'=> ''
+        ]);
+
+        Article::create($data);
+}
+
 }
