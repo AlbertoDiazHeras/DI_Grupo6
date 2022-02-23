@@ -11,7 +11,7 @@ Una vez registrados recibiremos un email de confirmación en nuestro correo. Deb
 
 ![confirmacion](https://user-images.githubusercontent.com/93120404/155230518-804cc1c4-b43e-4962-a342-4a045861c01f.png)
 
-Ingresamos nuestros datos de reigstro pulsando en el botón **ACCEDER**.
+Ingresamos nuestros datos de reigstro pulsando en el botón **ACCEDER** o en su defecto el botón **INICIAR SESIÓN**.
 
 ![accesoAlmagest](https://user-images.githubusercontent.com/93120404/155229690-a03135b8-b201-4f46-89f4-8879a738eb77.png)
 
