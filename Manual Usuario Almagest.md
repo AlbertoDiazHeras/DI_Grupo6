@@ -1,4 +1,4 @@
-![image](https://user-images.githubusercontent.com/93120404/155341359-0b3db2ff-4fe2-4909-b1ed-ab5e67e0fd1c.png)
+![image](https://user-images.githubusercontent.com/93120404/155341734-dba85e0b-47c3-42eb-87b5-a2165dcee676.png)
 
 <a name="top"></a>
 # Manual Usuario Almagest
