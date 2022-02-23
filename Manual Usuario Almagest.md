@@ -11,6 +11,7 @@
 * [Vista pedidos](#item4)
 * [Vista albaranes](#item5)
 * [Vista facturas](#item6)
+* [Logout](#item7)
 
 <a name="item1"></a>
 ### Registro
@@ -120,3 +121,18 @@ En la tercera pestaña, ***Albaranes***, accederemos a una vista en la base de d
 En la cuarta pestaña, ***Facturas***, accederemos a una vista en la base de datos donde tenemos almacenados las facturas, mostrando el número de albarán al que corresponden, número de factura y la fecha en la que se emitió.
 
 ![facturas](https://user-images.githubusercontent.com/93120404/155230169-21828f22-85db-4ede-b990-8815a6f4e55d.png)
+
+[Subir](#top)
+
+<a name="item7"></a>
+### Logout
+
+Por último si vamos salir de la aplicación deberíamos hacer logout. Si pinchamos en nuestro avatar tenemos la opción ***Desconectar***.
+
+![image](https://user-images.githubusercontent.com/93120404/155338402-cc7439b0-78ff-4d76-a296-b3bb6bed9710.png)
+
+Si pinchamos volveríamos a la pantalla de inicio de la aplicación.
+
+![image](https://user-images.githubusercontent.com/93120404/155339198-5123e131-e51e-42fe-9229-4058edb71818.png)
+
+
