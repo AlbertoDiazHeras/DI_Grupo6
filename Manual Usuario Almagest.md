@@ -59,12 +59,12 @@ Por ejemplo cambiar el nombre de nuestra empresa.
 
 ![image](https://user-images.githubusercontent.com/93120404/155335107-8b3e58e2-99f7-4d23-b9fb-83aed2a0a78f.png)
 
+![nombreEmpresa](https://user-images.githubusercontent.com/93120404/155229847-55a1e9f1-9794-4ba7-8c8a-110aa9e73d32.png)
+
 [Subir](#top)
 
 <a name="item3.2"></a>
 ### Crear PDF ficha de la empresa
-
-![nombreEmpresa](https://user-images.githubusercontent.com/93120404/155229847-55a1e9f1-9794-4ba7-8c8a-110aa9e73d32.png)
 
 Podemos crear y descargar un pdf de la ficha de nuestra empresa. Para ello pulsamos el botón **Crear PDF ficha de la empresa**.
 
@@ -73,7 +73,7 @@ Podemos crear y descargar un pdf de la ficha de nuestra empresa. Para ello pulsa
 [Subir](#top)
 
 <a name="item3.3"></a>
-### Crear PDF ficha de la empresa
+### Crear PDF ficha de productos
 
 También podemos crear y descargar un pdf de la ficha de los productos que disponemos en nuestra empresa. Para ello pulsamos el botón **Crear PDF ficha de productos**.
 
