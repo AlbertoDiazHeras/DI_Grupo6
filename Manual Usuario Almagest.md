@@ -127,12 +127,10 @@ En la cuarta pestaña, ***Facturas***, accederemos a una vista en la base de dat
 <a name="item7"></a>
 ### Logout
 
-Por último si vamos salir de la aplicación deberíamos hacer logout. Si pinchamos en nuestro avatar tenemos la opción ***Desconectar***.
+Por último si vamos a salir de la aplicación deberíamos hacer logout. Si pinchamos en nuestro avatar tenemos la opción ***Desconectar***.
 
 ![image](https://user-images.githubusercontent.com/93120404/155338402-cc7439b0-78ff-4d76-a296-b3bb6bed9710.png)
 
-Si pinchamos volveríamos a la pantalla de inicio de la aplicación.
+Si pinchamos en ***Desconectar*** volveríamos a la pantalla de inicio de la aplicación.
 
 ![image](https://user-images.githubusercontent.com/93120404/155339198-5123e131-e51e-42fe-9229-4058edb71818.png)
-
-
