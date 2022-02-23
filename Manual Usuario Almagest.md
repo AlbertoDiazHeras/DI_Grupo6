@@ -5,6 +5,9 @@
 * [Login](#item2)
 * [Datos empresa](#item3)
   * [Actualizar empresa](#item3.1)  
+  * [Crear PDF ficha de la empresa](#item3.2)  
+  * [Crear PDF ficha de productos](#item3.3)  
+  * [Enviar PDFs](#item3.4)  
 * [Vista pedidos](#item4)
 
 <a name="item1"></a>
@@ -54,15 +57,32 @@ En la primera pestaña ***Datos empresa*** podemos consultar los datos de nuestr
 Si encontramos algún dato incorrecto en nuestra ficha, podríamos editarlo y guardar los cambios mediante el botón **Actualizar empresa**.
 Por ejemplo cambiar el nombre de nuestra empresa.
 
+![image](https://user-images.githubusercontent.com/93120404/155335107-8b3e58e2-99f7-4d23-b9fb-83aed2a0a78f.png)
+
+[Subir](#top)
+
+<a name="item3.2"></a>
+### Crear PDF ficha de la empresa
+
 ![nombreEmpresa](https://user-images.githubusercontent.com/93120404/155229847-55a1e9f1-9794-4ba7-8c8a-110aa9e73d32.png)
 
 Podemos crear y descargar un pdf de la ficha de nuestra empresa. Para ello pulsamos el botón **Crear PDF ficha de la empresa**.
 
 ![crearPdf](https://user-images.githubusercontent.com/93120404/155229909-64c76e83-5f5c-4b0f-b5a3-39fd621165f1.png)
 
-También podemos crear y descargar un pdf de la ficha de los productos que disponemos en nuestra empresa. Para ello pulsamos el botón **Crear PDF ficha de la empresa**.
+[Subir](#top)
+
+<a name="item3.3"></a>
+### Crear PDF ficha de la empresa
+
+También podemos crear y descargar un pdf de la ficha de los productos que disponemos en nuestra empresa. Para ello pulsamos el botón **Crear PDF ficha de productos**.
 
 ![productosEmpresa](https://user-images.githubusercontent.com/93120404/155229961-3dd025ba-d094-4e95-9c4f-4c42ab8c91d3.png)
+
+[Subir](#top)
+
+<a name="item3.4"></a>
+### Enviar PDFs
 
 Mediante el botón **Enviar PDFs** podemos enviar estos pdfs generados a las personas encargadas de gestionarlos en las demás empresas existentes.
 
