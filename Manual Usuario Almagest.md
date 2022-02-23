@@ -4,10 +4,8 @@
 * [Registro](#item1)
 * [Login](#item2)
 * [Datos empresa](#item3)
-      * [Actualizar empresa](#item3.1)
+  * [Actualizar empresa](#item3.1)  
 * [Vista pedidos](#item4)
-
-[Subir](#top)
 
 <a name="item1"></a>
 ### Registro
