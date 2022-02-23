@@ -1,9 +1,13 @@
+<a name="top"></a>
 # Manual Usuario Almagest
 
 * [Registro](#item1)
-* [Contenido 2](#item2)
-* [Contenido 3](#item3)
-* [Contenido 4](#item4)
+* [Login](#item2)
+* [Datos empresa](#item3)
+      * [Actualizar empresa](#item3.1)
+* [Vista pedidos](#item4)
+
+[Subir](#top)
 
 <a name="item1"></a>
 ### Registro
@@ -20,6 +24,11 @@ Una vez registrados recibiremos un email de confirmación en nuestro correo. Deb
 
 ![confirmacion](https://user-images.githubusercontent.com/93120404/155230518-804cc1c4-b43e-4962-a342-4a045861c01f.png)
 
+[Subir](#top)
+
+<a name="item2"></a>
+### Login
+
 Ingresamos nuestros datos de reigstro pulsando en el botón **ACCEDER** o en su defecto el botón **INICIAR SESIÓN**.
 
 ![accesoAlmagest](https://user-images.githubusercontent.com/93120404/155229690-a03135b8-b201-4f46-89f4-8879a738eb77.png)
@@ -28,11 +37,21 @@ Se nos redirigirá la página a la vista de usuario donde contamos con 4 pestañ
 
 ![vistaUsuario](https://user-images.githubusercontent.com/93120404/155230051-4a6647c7-a21f-4a1b-8a3f-c7cba3390802.png)
 
+[Subir](#top)
+
+<a name="item3"></a>
+### Datos empresa
+
 En la primera pestaña ***Datos empresa*** podemos consultar los datos de nuestra empresa y disponemos de las opciones **Actualizar empresa**, **Crear PDF ficha de la empresa**, **Crear PDF ficha de productos** y **Enviar PDFs**.
 
 ![datosEmpresa](https://user-images.githubusercontent.com/93120404/155229751-69f153c8-b2be-4f5a-bba6-77a6a81e50e8.png)
 
 ![datosEmpresa2](https://user-images.githubusercontent.com/93120404/155229773-752eda29-3377-46cc-96da-12bbc4698099.png)
+
+[Subir](#top)
+
+<a name="item3.1"></a>
+### Actualizar empresa
 
 Si encontramos algún dato incorrecto en nuestra ficha, podríamos editarlo y guardar los cambios mediante el botón **Actualizar empresa**.
 Por ejemplo cambiar el nombre de nuestra empresa.
