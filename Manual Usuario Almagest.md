@@ -1,4 +1,13 @@
 # Manual Usuario Almagest
+
+* [Registro](#item1)
+* [Contenido 2](#item2)
+* [Contenido 3](#item3)
+* [Contenido 4](#item4)
+
+<a name="item1"></a>
+### Registro
+
 En la pantalla de inicio de **Almagest** podemos acceder a la aplicación si ya estamos registrados mediante el botón **ACCEDER** o registrarnos mediante el botón **REGISTRO**.
 
 ![inicioAlmagest](https://user-images.githubusercontent.com/93120404/155229643-b67e9c52-2a78-4262-80a0-73c1d05ae286.png)
