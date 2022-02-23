@@ -9,6 +9,8 @@
   * [Crear PDF ficha de productos](#item3.3)  
   * [Enviar PDFs](#item3.4)  
 * [Vista pedidos](#item4)
+* [Vista albaranes](#item5)
+* [Vista facturas](#item6)
 
 <a name="item1"></a>
 ### Registro
@@ -57,9 +59,9 @@ En la primera pestaña ***Datos empresa*** podemos consultar los datos de nuestr
 Si encontramos algún dato incorrecto en nuestra ficha, podríamos editarlo y guardar los cambios mediante el botón **Actualizar empresa**.
 Por ejemplo cambiar el nombre de nuestra empresa.
 
-![image](https://user-images.githubusercontent.com/93120404/155335107-8b3e58e2-99f7-4d23-b9fb-83aed2a0a78f.png)
-
 ![nombreEmpresa](https://user-images.githubusercontent.com/93120404/155229847-55a1e9f1-9794-4ba7-8c8a-110aa9e73d32.png)
+
+![image](https://user-images.githubusercontent.com/93120404/155335107-8b3e58e2-99f7-4d23-b9fb-83aed2a0a78f.png)
 
 [Subir](#top)
 
@@ -70,6 +72,8 @@ Podemos crear y descargar un pdf de la ficha de nuestra empresa. Para ello pulsa
 
 ![crearPdf](https://user-images.githubusercontent.com/93120404/155229909-64c76e83-5f5c-4b0f-b5a3-39fd621165f1.png)
 
+![image](https://user-images.githubusercontent.com/93120404/155336922-978bbcd8-f360-4eff-8fdf-f91920e31d49.png)
+
 [Subir](#top)
 
 <a name="item3.3"></a>
@@ -79,6 +83,8 @@ También podemos crear y descargar un pdf de la ficha de los productos que dispo
 
 ![productosEmpresa](https://user-images.githubusercontent.com/93120404/155229961-3dd025ba-d094-4e95-9c4f-4c42ab8c91d3.png)
 
+![image](https://user-images.githubusercontent.com/93120404/155337010-5e349d4d-a3cc-4240-a500-f59bf26939c7.png)
+
 [Subir](#top)
 
 <a name="item3.4"></a>
@@ -86,13 +92,30 @@ También podemos crear y descargar un pdf de la ficha de los productos que dispo
 
 Mediante el botón **Enviar PDFs** podemos enviar estos pdfs generados a las personas encargadas de gestionarlos en las demás empresas existentes.
 
+![image](https://user-images.githubusercontent.com/93120404/155337110-0405f0bf-b08c-4ea7-b0d0-48ed42f292eb.png)
+
+[Subir](#top)
+
+<a name="item4"></a>
+### Vista pedidos
+
 En la segunda pestaña, ***Pedidos***, accederemos a una vista en la base de datos donde tenemos almacenados los pedidos que hemos ido realizando, mostrando su número de pedido, fecha de realización del pedido y la empresa que lo hizo.
 
 ![pedidos](https://user-images.githubusercontent.com/93120404/155230121-2b948926-0afc-4a71-a60c-1769e93cc212.png)
 
+[Subir](#top)
+
+<a name="item5"></a>
+### Vista albaranes
+
 En la tercera pestaña, ***Albaranes***, accederemos a una vista en la base de datos donde tenemos almacenados los albaranes, mostrando el número de pedido al que corresponde, número de albarán y la fecha en la que se emitió.
 
 ![albaranes](https://user-images.githubusercontent.com/93120404/155230158-8f7df511-62bf-4261-8d72-1bf6056a8bff.png)
+
+[Subir](#top)
+
+<a name="item6"></a>
+### Vista facturas
 
 En la cuarta pestaña, ***Facturas***, accederemos a una vista en la base de datos donde tenemos almacenados las facturas, mostrando el número de albarán al que corresponden, número de factura y la fecha en la que se emitió.
 
